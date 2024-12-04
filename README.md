@@ -47,19 +47,18 @@ This project involves building an **ETL (Extract, Transform, Load)** pipeline to
 
 ## Sample Queries
 
-### Top 5 Most Frequent Genres
+### what is average duration of movies in each genre
+
 ```sql
-select director,
-count (distinct case when ng.genre = 'Comedies' then nf.show_id end) as no_of_comedy_movies,
-count (distinct case when ng.genre = 'Horro Movies' then nf.show_id end) as no_of_horro_movies
-from netflix_filtered nf
-inner join netflix_directors nd
-on nf.show_id = nd.show_id
-inner join netflix_genre ng
-on nf.show_id = ng.show_id
-where type = 'movie' and genre in( 'Horror Movies' ,'comedies')
-group by  director
-having count( distinct ng.genre) =2
+
+ select  distinct ng.genre ,avg(cast(replace(duration, ' min', '')as int)) as average_duration
+ from netflix_filtered as nf
+ inner join netflix_genre as  ng
+ on nf.show_id = ng.show_id
+ where type ='movie'
+ group by ng.genre
+ order by  average_duration
+;
 
 
 
