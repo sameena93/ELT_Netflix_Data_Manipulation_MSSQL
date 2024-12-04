@@ -47,6 +47,10 @@ This project involves building an **ETL (Extract, Transform, Load)** pipeline to
 
 ### Below is a screenshot of a SQL query used to filter and clean the Netflix data:
 
+![Query Screenshot](https://github.com/sameena93/ELT_Netflix_Data_Manipulation_MSSQL/blob/main/static/remove%20duplicates.png)
+---
+
+
 ![Query Screenshot](https://github.com/sameena93/ELT_Netflix_Data_Manipulation_MSSQL/blob/main/static/country_table.png)
 ---
 
