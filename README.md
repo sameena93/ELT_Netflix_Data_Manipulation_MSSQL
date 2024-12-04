@@ -59,6 +59,8 @@ This project involves building an **ETL (Extract, Transform, Load)** pipeline to
 -----
 ![Query2](https://github.com/sameena93/ELT_Netflix_Data_Manipulation_MSSQL/blob/main/static/genre_table.png)
 
+-----
+![Query2](https://github.com/sameena93/ELT_Netflix_Data_Manipulation_MSSQL/blob/main/static/handle%20duration%20null%20value.png)
 
 ----
 
