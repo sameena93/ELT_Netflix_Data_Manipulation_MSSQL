@@ -50,6 +50,14 @@ This project involves building an **ETL (Extract, Transform, Load)** pipeline to
 ![Query Screenshot](https://github.com/sameena93/ELT_Netflix_Data_Manipulation_MSSQL/blob/main/static/country_table.png)
 ---
 
+![Query2](https://github.com/sameena93/ELT_Netflix_Data_Manipulation_MSSQL/blob/main/static/director_table.png)
+
+-----
+![Query2](https://github.com/sameena93/ELT_Netflix_Data_Manipulation_MSSQL/blob/main/static/genre_table.png)
+
+
+----
+
 ## Sample Queries
 
 ### what is average duration of movies in each genre
