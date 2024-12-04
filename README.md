@@ -18,6 +18,6 @@ This project involves building an **ETL (Extract, Transform, Load)** pipeline to
 
 - **Languages:** Python (Pandas, NumPy), SQL (MSSQL)
 - **Tools:** Jupyter Notebook, Microsoft SQL Server
-- **Data Source:** [Kaggle Netflix Dataset]([https://www.kaggle.com/datasets/shivamb/netflix-shows])
+- **Data Source:** [Kaggle Netflix Dataset](https://www.kaggle.com/datasets/shivamb/netflix-shows)
 
 ---
