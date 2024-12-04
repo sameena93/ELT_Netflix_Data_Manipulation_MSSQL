@@ -49,15 +49,17 @@ This project involves building an **ETL (Extract, Transform, Load)** pipeline to
 
 ### Top 5 Most Frequent Genres
 ```sql
-SELECT Genre, COUNT(*) AS Count
-FROM GenreTable
-GROUP BY Genre
-ORDER BY Count DESC
-LIMIT 5;
-
-
-
-
+select director,
+count (distinct case when ng.genre = 'Comedies' then nf.show_id end) as no_of_comedy_movies,
+count (distinct case when ng.genre = 'Horro Movies' then nf.show_id end) as no_of_horro_movies
+from netflix_filtered nf
+inner join netflix_directors nd
+on nf.show_id = nd.show_id
+inner join netflix_genre ng
+on nf.show_id = ng.show_id
+where type = 'movie' and genre in( 'Horror Movies' ,'comedies')
+group by  director
+having count( distinct ng.genre) =2
 
 
 
